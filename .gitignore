@@ -1,0 +1,8 @@
+/.idea/
+/.vscode/
+
+node_modules
+yarn.lock
+npm.lock
+.temp
+.cache
