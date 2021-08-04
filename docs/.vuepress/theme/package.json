@@ -1,0 +1,19 @@
+{
+  "name": "vuepress-theme-oxygen-not-included",
+  "version": "0.0.0",
+  "description": "《缺氧》游戏风格主题，开发中……",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yue-plus/vuepress-theme-oxygen-not-included.git"
+  },
+  "author": "Yue-plus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yue-plus/vuepress-theme-oxygen-not-included/issues"
+  },
+  "homepage": "https://github.com/Yue-plus/vuepress-theme-oxygen-not-included#readme",
+  "devDependencies": {
+    "@vuepress/theme-default": "^2.0.0-beta.23"
+  }
+}
