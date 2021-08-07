@@ -16,7 +16,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+@import '@vuepress/plugin-palette/palette';
 .my-footer {
   text-align: center;
 }
