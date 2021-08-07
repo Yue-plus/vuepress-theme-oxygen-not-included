@@ -9,12 +9,14 @@
   .navbar-links-wrapper {
     color: $text-shade;
     padding: 3px 12px;
+    line-height: normal;
     border: 1px solid $border-nav;
     background-color: $bg-nav-item;
   }
 }
 
 .navbar-links {
+  line-height: normal;
   a {
     &:hover {
       color: $text-shade;
@@ -23,6 +25,7 @@
   .navbar-links-item {
     color: $text-shade;
     background-color: $bg-nav-item;
+    line-height: normal;
     &:hover {
       color: $text-shade;
     }
