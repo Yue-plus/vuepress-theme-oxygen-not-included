@@ -18,6 +18,9 @@ export default {
 
 <style lang="scss">
 @import '@vuepress/plugin-palette/palette';
+@import '../styles/vars';
+@import '../styles/navbar';
+
 .my-footer {
   text-align: center;
 }

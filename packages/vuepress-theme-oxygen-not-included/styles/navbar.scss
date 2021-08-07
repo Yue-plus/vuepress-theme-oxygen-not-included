@@ -1,0 +1,52 @@
+@import "vars";
+
+.navbar {
+  background-color: $bg-nav;
+  line-height: normal;
+  .site-name {
+    color: $text-shade;
+  }
+  .navbar-links-wrapper {
+    color: $text-shade;
+    padding: 3px 12px;
+    border: 1px solid $border-nav;
+    background-color: $bg-nav-item;
+  }
+}
+
+.navbar-links {
+  a {
+    &:hover {
+      color: $text-shade;
+    }
+  }
+  .navbar-links-item {
+    color: $text-shade;
+    background-color: $bg-nav-item;
+    &:hover {
+      color: $text-shade;
+    }
+  }
+}
+
+.toggle-dark-button {
+  color: $text-shade;
+}
+
+
+.dropdown-wrapper {
+  .dropdown-title,
+  .mobile-dropdown-title {
+    color: $text-shade;
+  }
+  .nav-dropdown {
+    background-color: $bg-nav-item;
+    border: 1px solid $border-nav;
+    border-radius: 0;
+    .nav-dropdown-item {
+      a:hover {
+
+      }
+    }
+  }
+}
