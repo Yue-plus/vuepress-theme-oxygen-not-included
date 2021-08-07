@@ -6,7 +6,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: 'zh-CN',
   title: 'VuePress Theme Oxygen Not Included',
   description: '《缺氧》游戏风格主题，开发中……',
-  theme: path.resolve(__dirname, './theme'),
+  theme: 'vuepress-theme-oxygen-not-included',
 
   themeConfig: {
     navbar: [
