@@ -1,0 +1,15 @@
+@import "vars";
+
+.sidebar {
+  color: $text-shade;
+  background-color: $bg-shade;
+}
+
+.sidebar-heading,
+.sidebar-item:not(.sidebar-heading) {
+  color: $text-shade;
+}
+
+@media (min-width: $MQMobile) {
+
+}

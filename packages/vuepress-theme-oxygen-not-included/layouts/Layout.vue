@@ -21,6 +21,7 @@ export default {
 @import '../styles/vars';
 @import '../styles/navbar';
 @import '../styles/home';
+@import '../styles/sidebar';
 
 .my-footer {
   text-align: center;
