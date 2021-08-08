@@ -15,8 +15,7 @@
   "homepage": "https://github.com/Yue-plus/vuepress-theme-oxygen-not-included#readme",
   "devDependencies": {
     "@vuepress/theme-default": "^2.0.0-beta.23",
-    "@vuepress/utils": "^2.0.0-beta.23",
-    "@vuepress/plugin-palette": "^2.0.0-beta.23"
+    "@vuepress/utils": "^2.0.0-beta.23"
   },
   "dependencies": {
     "vuepress": "^2.0.0-beta.23"

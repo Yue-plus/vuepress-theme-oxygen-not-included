@@ -1,25 +1,34 @@
-$brand: #ef5d5a;
+// responsive breakpoints
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
+// brand color
+$brand: #ef5d5a !default;
 :root,
 html.dark {
-  --c-brand: #ef5d5a;
-  --c-brand-light: #ef5d5a;
+  --c-brand: $brand;
+  --c-brand-light: $brand;
 }
 
-$bg-light: #ffffff;
-$bg-shade: #000000;
-$bg-primary: #7e3d5c;
-$bg-primary-action: #9e5579;
-$bg-secondary: #3e4357;
-$bg-secondary-action: #585f7c;
-$bg-nav: $bg-primary;
-$bg-nav-action: $bg-primary-action;
-$bg-nav-item: $bg-secondary;
-$bg-nav-item-action: $bg-secondary-action;
+// background color
+$bg-light: #ffffff !default;
+$bg-shade: #000000 !default;
+$bg-primary: #7e3d5c !default;
+$bg-primary-action: #9e5579 !default;
+$bg-secondary: #3e4357 !default;
+$bg-secondary-action: #585f7c !default;
+$bg-nav: $bg-primary !default;
+$bg-nav-action: $bg-primary-action !default;
+$bg-nav-item: $bg-secondary !default;
+$bg-nav-item-action: $bg-secondary-action !default;
 
-$text-light: #000000;
-$text-shade: #ffffff;
-$text-strong: #b05b89;
+// text color
+$text-light: #000000 !default;
+$text-shade: #ffffff !default;
+$text-strong: #b05b89 !default;
 
-$border: #000000;
-$border-nav: $border;
-$border-hero-button: $border;
+// border color
+$border: #000000 !default;
+$border-nav: $border !default;
+$border-hero-button: $border !default;;

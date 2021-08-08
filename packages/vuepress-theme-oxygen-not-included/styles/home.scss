@@ -2,9 +2,21 @@
 
 .home {
   .hero {
+    position: relative;
+    img { margin-left: 0; }
+    h1 { text-align: left; }
+    .description {
+      margin-left: 0;
+      text-align: left;
+    }
     .action-button {
+      width: 100%;
       border: 2px solid $border-hero-button;
       border-radius: 0;
+      box-sizing: border-box;
+      &:not(:first-child) {
+        margin: .6rem 0 0 0;
+      }
       &.primary {
         color: $text-shade;
         background-color: $bg-primary;
@@ -20,6 +32,19 @@
         &:hover {
           background-color: $bg-secondary-action;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: $MQMobile) {
+  .home {
+    .hero {
+      .actions {
+        width: 16rem;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
     }
   }
