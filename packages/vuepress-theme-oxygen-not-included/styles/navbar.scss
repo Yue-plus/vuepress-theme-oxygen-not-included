@@ -53,3 +53,9 @@
     }
   }
 }
+
+@media (max-width: $MQMobile) {
+  .toggle-dark-button {
+    margin-left: 0;
+  }
+}
