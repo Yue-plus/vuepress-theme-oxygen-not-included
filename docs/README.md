@@ -31,8 +31,8 @@ footer: MIT Licensed | 赣ICP备19008355号 | Copyright © 2021-present Yue_plus
   <CodeGroupItem title="YARN" active>
 
 ```bash
-# 在你的项目中安装
-yarn add -D vuepress@next
+# 在项目中安装
+yarn add vuepress-theme-oxygen-not-included
 
 # 新建一个 markdown 文件
 echo '# Hello VuePress' > README.md
@@ -49,8 +49,8 @@ yarn vuepress build
   <CodeGroupItem title="NPM">
 
 ```bash
-# 在你的项目中安装
-npm install -D vuepress@next
+# 在项目中安装
+npm install vuepress-theme-oxygen-not-included
 
 # 新建一个 markdown 文件
 echo '# Hello VuePress' > README.md
