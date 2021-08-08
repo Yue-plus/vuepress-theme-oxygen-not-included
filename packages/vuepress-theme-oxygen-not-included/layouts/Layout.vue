@@ -17,11 +17,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@vuepress/plugin-palette/palette';
+@import '@vuepress/plugin-palette/palette'; // 此文件由 VuePress 动态生成
 @import '../styles/vars';
 @import '../styles/navbar';
+@import '../styles/home';
 
 .my-footer {
   text-align: center;
 }
 </style>
+
+<!-- 此文件由 VuePress 动态生成 -->
+<style lang="scss" src="@vuepress/plugin-palette/style"></style>

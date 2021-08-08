@@ -1,0 +1,26 @@
+@import "vars";
+
+.home {
+  .hero {
+    .action-button {
+      border: 2px solid $border-hero-button;
+      border-radius: 0;
+      &.primary {
+        color: $text-shade;
+        background-color: $bg-primary;
+        border-color: $border-hero-button;
+        &:hover {
+          background-color: $bg-primary-action;
+        }
+      }
+      &.secondary {
+        color: $text-shade;
+        background-color: $bg-secondary;
+        border-color: $border-hero-button;
+        &:hover {
+          background-color: $bg-secondary-action;
+        }
+      }
+    }
+  }
+}

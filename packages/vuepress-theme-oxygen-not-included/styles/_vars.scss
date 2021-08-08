@@ -5,13 +5,21 @@ html.dark {
   --c-brand-light: #ef5d5a;
 }
 
-$bg-nav: #7e3d5c;
-$bg-nav-item: #3e4357;
-$bg-nav-item-action: #585f7c;
-$bg-nav-action: #9e5579;
+$bg-light: #ffffff;
+$bg-shade: #000000;
+$bg-primary: #7e3d5c;
+$bg-primary-action: #9e5579;
+$bg-secondary: #3e4357;
+$bg-secondary-action: #585f7c;
+$bg-nav: $bg-primary;
+$bg-nav-action: $bg-primary-action;
+$bg-nav-item: $bg-secondary;
+$bg-nav-item-action: $bg-secondary-action;
 
 $text-light: #000000;
 $text-shade: #ffffff;
 $text-strong: #b05b89;
 
-$border-nav: #000000;
+$border: #000000;
+$border-nav: $border;
+$border-hero-button: $border;
