@@ -3,6 +3,7 @@
 .navbar {
   background-color: $bg-nav;
   line-height: normal;
+  border-bottom-color: $border-nav;
   .site-name {
     color: $text-shade;
   }
@@ -36,7 +37,6 @@
   color: $text-shade;
 }
 
-
 .dropdown-wrapper {
   .dropdown-title,
   .mobile-dropdown-title {
@@ -57,5 +57,10 @@
 @media (max-width: $MQMobile) {
   .toggle-dark-button {
     margin-left: 0;
+  }
+  .dropdown-wrapper {
+    .nav-dropdown {
+      border: none;
+    }
   }
 }

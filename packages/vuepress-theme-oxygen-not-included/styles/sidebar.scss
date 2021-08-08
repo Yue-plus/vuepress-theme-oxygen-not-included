@@ -3,13 +3,13 @@
 .sidebar {
   color: $text-shade;
   background-color: $bg-shade;
+  .navbar-links {
+    border: none;
+    padding-top: 0;
+  }
 }
 
 .sidebar-heading,
 .sidebar-item:not(.sidebar-heading) {
   color: $text-shade;
-}
-
-@media (min-width: $MQMobile) {
-
 }

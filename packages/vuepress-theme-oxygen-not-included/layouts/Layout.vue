@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <template #page-bottom>
-      <div class="my-footer">This is my custom page footer</div>
-    </template>
+<!--    <template #page-bottom>-->
+<!--      <div class="my-footer">This is my custom page footer</div>-->
+<!--    </template>-->
   </Layout>
 </template>
 
@@ -23,9 +23,9 @@ export default {
 @import '../styles/home';
 @import '../styles/sidebar';
 
-.my-footer {
-  text-align: center;
-}
+//.my-footer {
+//  text-align: center;
+//}
 </style>
 
 <!-- 此文件由 VuePress 动态生成 -->
