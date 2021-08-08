@@ -2,6 +2,8 @@
 
 ![demo](./demo.jpg)
 
+预览 | Demo：<https://OxygenNotIncluded.theme.YuePlus.ink/>
+
 ## 快速上手 | Getting Start
 
 ```sh
