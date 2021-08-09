@@ -18,6 +18,13 @@ export default defineUserConfig<DefaultThemeOptions>({
         ]
       },
       {
+        text: '示例文档',
+        children: [
+          { text: '示例：Markdown 语法', link: '/example/markdown.md' },
+          { text: '示例：YAML 语法', link: '/example/yaml.md' }
+        ]
+      },
+      {
         text: '关于',
         children: [
           { text: '关于：《缺氧》', link: '/about/OxygenNotIncluded.html' }
