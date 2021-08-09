@@ -1,9 +1,15 @@
-// responsive breakpoints
+/*
+ * 响应式布局触发点
+ * responsive breakpoints
+ */
 $MQNarrow: 959px !default;
 $MQMobile: 719px !default;
 $MQMobileNarrow: 419px !default;
 
-// brand color
+/*
+ * 品牌主色调
+ * brand color
+ */
 $brand: #ef5d5a !default;
 :root,
 html.dark {
@@ -11,7 +17,10 @@ html.dark {
   --c-brand-light: $brand;
 }
 
-// background color
+/*
+ * 背景配色
+ * background color
+ */
 $bg-light: #ffffff !default;
 $bg-shade: #333333 !default;
 $bg-primary: #7e3d5c !default;
@@ -23,12 +32,26 @@ $bg-nav-action: $bg-primary-action !default;
 $bg-nav-item: $bg-secondary !default;
 $bg-nav-item-action: $bg-secondary-action !default;
 
-// text color
+/*
+ * 文本配色
+ * text color
+ */
 $text-light: #000000 !default;
 $text-shade: #ffffff !default;
 $text-strong: #b05b89 !default;
 
-// border color
+/*
+ * 边框配色
+ * border color
+ */
 $border: #000000 !default;
 $border-nav: $border !default;
 $border-hero-button: $border !default;;
+
+/*
+ * 自定义容器配色
+ * custom container color
+ */
+$CC-border_tip: #585f7c !default;
+$CC-border_warning: #ffee22 !default;
+$CC-border_danger: #ef5d5a !default;

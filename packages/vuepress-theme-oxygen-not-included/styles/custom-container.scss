@@ -1,0 +1,14 @@
+@import "vars";
+
+.custom-container {
+  &.tip { border-color: $CC-border_tip; }
+  &.warning { border-color: $CC-border_warning; }
+  &.danger { border-color: $CC-border_danger; }
+  &.details {
+    color: $text-shade;
+    box-sizing: border-box;
+    border: 3px solid $border;
+    border-radius: 0;
+    background-color: $bg-primary;
+  }
+}
