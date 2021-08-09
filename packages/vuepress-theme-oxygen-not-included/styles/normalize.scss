@@ -1,0 +1,11 @@
+@import "vars";
+
+a,
+strong {
+  color: $text-strong;
+  font-weight: bold;
+}
+
+em {
+  color: $danger;
+}

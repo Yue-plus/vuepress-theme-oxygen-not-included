@@ -19,6 +19,7 @@ export default {
 <style lang="scss">
 @import '@vuepress/plugin-palette/palette'; // 此文件由 VuePress 动态生成
 @import '../styles/vars';
+@import '../styles/normalize';
 @import '../styles/navbar';
 @import '../styles/home';
 @import '../styles/sidebar';
