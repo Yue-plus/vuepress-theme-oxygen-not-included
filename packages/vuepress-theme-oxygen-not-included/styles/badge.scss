@@ -1,0 +1,10 @@
+@import "vars";
+
+.badge {
+  &.tip { background-color: $tip; }
+  &.danger { background-color: $danger; }
+  &.warning {
+    color: $text-light;
+    background-color: $warning;
+  }
+}

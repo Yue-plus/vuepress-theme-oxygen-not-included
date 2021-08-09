@@ -23,6 +23,7 @@ export default {
 @import '../styles/home';
 @import '../styles/sidebar';
 @import '../styles/custom-container';
+@import '../styles/badge';
 
 //.my-footer {
 //  text-align: center;

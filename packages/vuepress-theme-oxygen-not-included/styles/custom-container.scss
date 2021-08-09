@@ -1,9 +1,9 @@
 @import "vars";
 
 .custom-container {
-  &.tip { border-color: $CC-border_tip; }
-  &.warning { border-color: $CC-border_warning; }
-  &.danger { border-color: $CC-border_danger; }
+  &.tip { border-color: $tip; }
+  &.warning { border-color: $warning; }
+  &.danger { border-color: $danger; }
   &.details {
     color: $text-shade;
     box-sizing: border-box;

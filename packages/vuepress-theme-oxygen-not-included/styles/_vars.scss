@@ -18,6 +18,14 @@ html.dark {
 }
 
 /*
+ * 状态色
+ * status color
+ */
+$tip: #585f7c !default;
+$warning: #ffee22 !default;
+$danger: #ef5d5a !default;
+
+/*
  * 背景配色
  * background color
  */
@@ -47,11 +55,3 @@ $text-strong: #b05b89 !default;
 $border: #000000 !default;
 $border-nav: $border !default;
 $border-hero-button: $border !default;;
-
-/*
- * 自定义容器配色
- * custom container color
- */
-$CC-border_tip: #585f7c !default;
-$CC-border_warning: #ffee22 !default;
-$CC-border_danger: #ef5d5a !default;
