@@ -250,21 +250,21 @@ Markdown 图片语法格式如下：
 开头一个感叹号 !
 接着一个方括号，里面放上图片的替代文字
 接着一个英文括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。
-> ![罗德岛集结](https://ak.hypergryph.com/upload/images/20190228/118078295785f64dac736c6ade50bb76.jpg "罗德岛集结")
+> ![img](https://www.klei.com/sites/default/files/games/oxygen-not-included/gallery/base.jpg "基地")
 ```markdown
-![罗德岛集结](https://ak.hypergryph.com/upload/images/20190228/118078295785f64dac736c6ade50bb76.jpg "罗德岛集结")
+![img](https://www.klei.com/sites/default/files/games/oxygen-not-included/gallery/base.jpg "基地")
 ```
 当然，你也可以像网址那样对图片网址使用变量:
 ```markdown
-这个链接用 `2` 作为网址变量 [凯尔希][2].
+这个链接用 `2` 作为网址变量 [氧气][2].
 然后在文档的结尾为变量赋值（网址）
 
-[2]: https://ak.hypergryph.com/upload/images/20190228/143666074a406ecaa6cd4271dc7c5127.jpg
+[2]: https://www.klei.com/sites/default/files/games/oxygen-not-included/gallery/oxygen-overlay.png
 ```
 Markdown 还没有办法指定图片的高度与宽度，如果需要的话，也可以使用普通的 `<img>` 标签。
-> <img src="https://ak.hypergryph.com/assets/index/images/ak/common/story/item_infected.png" width="200px">
+> <img src="https://www.klei.com/sites/default/files/games/oxygen-not-included/gallery/digging.png" width="200px">
 ```html
-<img src="https://ak.hypergryph.com/assets/index/images/ak/common/story/item_infected.png" width="200px">
+<img src="https://www.klei.com/sites/default/files/games/oxygen-not-included/gallery/digging.png" width="200px">
 ```
 
 ## Markdown 表格

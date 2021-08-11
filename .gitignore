@@ -2,8 +2,9 @@
 /.vscode/
 
 node_modules
-yarn.lock
-npm.lock
 .temp
 .cache
 dist
+yarn.lock
+npm.lock
+*.log
