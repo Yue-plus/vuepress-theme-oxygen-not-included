@@ -4,7 +4,7 @@
     <h1>404 NOT FOUND</h1>
     <p>救命！黑洞吞噬了这个页面！</p>
     <a onclick="window.history.back()">返回上一页</a>
-    <RouterLink :to="homeLink">{{ homeText }}</RouterLink>
+    <a :href="homeLink">{{ homeText }}</a>
     <a onclick="window.close()">关闭此页</a>
   </div>
 </template>
