@@ -14,7 +14,8 @@ export default defineUserConfig<DefaultThemeOptions>({
         text: '主题文档',
         children: [
           { text: '文档：开始之前', link: '/guide/' },
-          { text: '文档：主题配置', link: '/guide/config.md' }
+          { text: '文档：主题配置', link: '/guide/config.md' },
+          { text: '文档：内置组件', link: '/guide/components.md' }
         ]
       },
       {
