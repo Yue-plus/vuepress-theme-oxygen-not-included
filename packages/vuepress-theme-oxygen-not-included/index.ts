@@ -12,5 +12,6 @@ module.exports = {
       '@vuepress/plugin-palette',
       { preset: 'sass' }
     ]
-  ]
+  ],
+  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts')
 }
