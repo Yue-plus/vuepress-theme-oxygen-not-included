@@ -32,4 +32,18 @@
 </Overlays>
 ```
 
-<Overlays src="/OverlaysExample/" />
+<Overlays
+dir="/OverlaysExample/"
+items="{
+oxygen: oxygen.jpg
+}"
+/>
+
+### `<Overlays>`
+
+- Props:
+  + dir
+    * 类型：`string`
+    * 默认值：`'''`（空字符串）
+    * 合法值：
+      一个可用的 URL，指向一个目录。
