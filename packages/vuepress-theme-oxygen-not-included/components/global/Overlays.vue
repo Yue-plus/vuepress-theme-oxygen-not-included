@@ -51,7 +51,7 @@
     <div class="overlays-img">
       <img v-show="action === 'none'" v-if="none" :src="dir + none" alt="无概览" title="概览" />
       <img v-show="action === 'oxygen'" v-if="oxygen" :src="dir + oxygen" alt="无氧气概览" title="氧气概览" />
-      <img v-show="action === 'power'" v-if="power" :src="dir + power"  alt="无电力概览" title="电力" />
+      <img v-show="action === 'power'" v-if="power" :src="dir + power"  alt="无电力概览" title="电力概览" />
       <img v-show="action === 'temperature'" v-if="temperature" :src="dir + temperature"  alt="无温度概览" title="温度概览" />
       <img v-show="action === 'materials'" v-if="materials" :src="dir + materials"  alt="无材料概览" title="材料概览" />
       <img v-show="action === 'light'" v-if="light" :src="dir + light"  alt="无光照概览" title="光照概览" />
@@ -70,7 +70,7 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, toRef } from 'vue'
+  import { defineComponent } from 'vue'
 
   export default defineComponent({
     name: 'Overlays',
