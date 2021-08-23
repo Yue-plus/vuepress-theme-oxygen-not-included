@@ -2,32 +2,69 @@
   <div class="overlays">
     <div class="overlays-controller">
       <span class="overlays-controller-title">概览</span>
-      <button><img src="../../asset/overlays/oxygen.png" alt="无氧气概览" title="氧气概览"></button>
-      <button><img src="../../asset/overlays/power.png" alt="无电力概览" title="电力概览"></button>
-      <button><img src="../../asset/overlays/temperature.png" alt="无温度概览" title="电力概览"></button>
-      <button><img src="../../asset/overlays/materials.png" alt="无材料概览" title="材料概览"></button>
-      <button><img src="../../asset/overlays/lights.png" alt="无光照概览" title="光照概览"></button>
-      <button><img src="../../asset/overlays/plumbing.png" alt="无水管概览" title="水管概览"></button>
-      <button><img src="../../asset/overlays/ventilation.png" alt="无通风概览" title="通风概览"></button>
-      <button><img src="../../asset/overlays/decor.png" alt="无装饰概览" title="装饰概览"></button>
-      <button><img src="../../asset/overlays/germ.png" alt="无病菌概览" title="病菌概览"></button>
-      <button><img src="../../asset/overlays/farming.png" alt="无耕作概览" title="耕作概览"></button>
-      <button><img src="../../asset/overlays/room.png" alt="无房间概览" title="房间概览"></button>
-      <button><img src="../../asset/overlays/exosuit.png" alt="无太空服概览" title="太空服概览"></button>
-      <button><img src="../../asset/overlays/automation.png" alt="无自动化概览" title="自动化概览"></button>
-      <button><img src="../../asset/overlays/conveyor.png" alt="无运输概览" title="运输概览"></button>
-      <button><img src="../../asset/overlays/radiation.png" alt="无辐射概览" title="辐射概览"></button>
+      <button v-if="oxygen" @click.stop="switchAction('oxygen')" :class="action === 'oxygen' ? 'action' : ''">
+        <img src="../../asset/overlays/oxygen.png" alt="氧气概览" title="氧气概览">
+      </button>
+      <button v-if="power" @click.stop="switchAction('power')">
+        <img src="../../asset/overlays/power.png" alt="电力概览" title="电力概览">
+      </button>
+      <button v-if="temperature" @click.stop="switchAction('temperature')">
+        <img src="../../asset/overlays/temperature.png" alt="温度概览" title="电力概览">
+      </button>
+      <button v-if="materials" @click.stop="switchAction('materials')">
+        <img src="../../asset/overlays/materials.png" alt="材料概览" title="材料概览">
+      </button>
+      <button v-if="light" @click.stop="switchAction('light')">
+        <img src="../../asset/overlays/lights.png" alt="光照概览" title="光照概览">
+      </button>
+      <button v-if="plumbing" @click.stop="switchAction('plumbing')">
+        <img src="../../asset/overlays/plumbing.png" alt="水管概览" title="水管概览">
+      </button>
+      <button v-if="ventilation" @click.stop="switchAction('ventilation')">
+        <img src="../../asset/overlays/ventilation.png" alt="通风概览" title="通风概览">
+      </button>
+      <button v-if="decor" @click.stop="switchAction('decor')">
+        <img src="../../asset/overlays/decor.png" alt="装饰概览" title="装饰概览">
+      </button>
+      <button v-if="germ" @click.stop="switchAction('germ')">
+        <img src="../../asset/overlays/germ.png" alt="病菌概览" title="病菌概览">
+      </button>
+      <button v-if="farming" @click.stop="switchAction('farming')">
+        <img src="../../asset/overlays/farming.png" alt="耕作概览" title="耕作概览">
+      </button>
+      <button v-if="room" @click.stop="switchAction('room')">
+        <img src="../../asset/overlays/room.png" alt="房间概览" title="房间概览">
+      </button>
+      <button v-if="exosuit" @click.stop="switchAction('exosuit')">
+        <img src="../../asset/overlays/exosuit.png" alt="太空服概览" title="太空服概览">
+      </button>
+      <button v-if="automation" @click.stop="switchAction('automation')">
+        <img src="../../asset/overlays/automation.png" alt="自动化概览" title="自动化概览">
+      </button>
+      <button v-if="conveyor" @click.stop="switchAction('conveyor')">
+        <img src="../../asset/overlays/conveyor.png" alt="运输概览" title="运输概览">
+      </button>
+      <button v-if="radiation" @click.stop="switchAction('radiation')">
+        <img src="../../asset/overlays/radiation.png" alt="辐射概览" title="辐射概览">
+      </button>
     </div>
     <div class="overlays-img">
-      <img :src="actionImg"  alt="无概览" />
-<!--      <template v-for="(value, key) in items">-->
-<!--        <img-->
-<!--            :class="key"-->
-<!--            :src="actionImg"-->
-<!--            :alt="'无' + value + '概览'"-->
-<!--            :title="value + '概览'"-->
-<!--        />-->
-<!--      </template>-->
+      <img v-show="action === 'none'" v-if="none" :src="dir + none" alt="无概览" title="概览" />
+      <img v-show="action === 'oxygen'" v-if="oxygen" :src="dir + oxygen" alt="无氧气概览" title="氧气概览" />
+      <img v-show="action === 'power'" v-if="power" :src="dir + power"  alt="无电力概览" title="电力" />
+      <img v-show="action === 'temperature'" v-if="temperature" :src="dir + temperature"  alt="无温度概览" title="温度概览" />
+      <img v-show="action === 'materials'" v-if="materials" :src="dir + materials"  alt="无材料概览" title="材料概览" />
+      <img v-show="action === 'light'" v-if="light" :src="dir + light"  alt="无光照概览" title="光照概览" />
+      <img v-show="action === 'plumbing'" v-if="plumbing" :src="dir + plumbing"  alt="无水管概览" title="水管概览" />
+      <img v-show="action === 'ventilation'" v-if="ventilation" :src="dir + ventilation"  alt="无通风概览" title="通风概览" />
+      <img v-show="action === 'decor'" v-if="decor" :src="dir + decor"  alt="无装饰概览" title="装饰概览" />
+      <img v-show="action === 'germ'" v-if="germ" :src="dir + farming"  alt="无病菌概览" title="病菌概览" />
+      <img v-show="action === 'farming'" v-if="farming" :src="dir + farming"  alt="无耕作概览" title="耕作概览" />
+      <img v-show="action === 'room'" v-if="room" :src="dir + room"  alt="无房间概览" title="房间概览" />
+      <img v-show="action === 'exosuit'" v-if="exosuit" :src="dir + exosuit"  alt="无太空服概览" title="太空服概览" />
+      <img v-show="action === 'automation'" v-if="automation" :src="dir + automation"  alt="无自动化概览" title="自动化概览" />
+      <img v-show="action === 'conveyor'" v-if="conveyor" :src="dir + conveyor"  alt="无运输概览" title="运输概览" />
+      <img v-show="action === 'radiation'" v-if="radiation" :src="dir + radiation"  alt="无辐射概览" title="辐射概览" />
     </div>
   </div>
 </template>
@@ -43,34 +80,36 @@
         type: String,
         default: ''
       },
-      items: {
-        type: Object,
-        default: {}
+      none        : String,
+      oxygen      : String,
+      power       : String,
+      temperature : String,
+      materials   : String,
+      light       : String,
+      plumbing    : String,
+      ventilation : String,
+      decor       : String,
+      germ        : String,
+      farming     : String,
+      room        : String,
+      exosuit     : String,
+      automation  : String,
+      conveyor    : String,
+      radiation   : String
+    },
+
+    methods: {
+      switchAction(S) {
+        this.action === S ? this.action='none' : this.action=S
       }
     },
 
     data() {
-      return {
-        actionImg: '/OverlaysExample/default.jpg',
-        items: {
-          oxygen       : '氧气',
-          power        : '电力',
-          temperature  : '温度',
-          materials    : '材料',
-          light        : '光照',
-          plumbing     : '水管',
-          ventilation  : '通风',
-          decor        : '装饰',
-          germ         : '病菌',
-          farming      : '耕作',
-          rome         : '房间',
-          exosuit      : '太空服',
-          automation   : '自动化',
-          conveyor     : '运输',
-          radiation    : '辐射'
-        }
+      return  {
+        action: 'none'
       }
     }
+
   })
 </script>
 
@@ -90,6 +129,7 @@
     }
     img {
       height: 32px;
+      cursor: pointer;
     }
   }
   .overlays-controller-title {

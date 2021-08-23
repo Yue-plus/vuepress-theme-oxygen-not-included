@@ -24,7 +24,7 @@
   <Decor />       <!-- 装饰 -->
   <Germ />        <!-- 病菌 -->
   <Farming />     <!-- 耕作 -->
-  <Rome />        <!-- 房间 -->
+  <Room />        <!-- 房间 -->
   <Exosuit />     <!-- 太空服 -->
   <Automation />  <!-- 自动化 -->
   <Conveyor />    <!-- 运输 -->
@@ -33,10 +33,22 @@
 ```
 
 <Overlays
-dir="/OverlaysExample/"
-items="{
-oxygen: oxygen.jpg
-}"
+  dir         = "/OverlaysExample/"
+  none        = "default.jpg"
+  oxygen      = "oxygen.jpg"
+  power       = "power.jpg"
+  temperature = "temperature.jpg"
+  materials   = "materials.jpg"
+  light       = "light.jpg"
+  plumbing    = "plumbing.jpg"
+  ventilation = "ventilation.jpg"
+  decor       = "decor.jpg"
+  germ        = "germ.jpg"
+  farming     = "farming.jpg"
+  room        = "room.jpg"
+  exosuit     = "exosuit.jpg"
+  automation  = "automation.jpg"
+  conveyor    = "conveyor.jpg"
 />
 
 ### `<Overlays>`
