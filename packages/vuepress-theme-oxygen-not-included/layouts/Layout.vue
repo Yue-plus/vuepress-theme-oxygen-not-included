@@ -25,6 +25,7 @@ export default {
 @import '../styles/sidebar';
 @import '../styles/custom-container';
 @import '../styles/badge';
+@import '../styles/code-group';
 
 //.my-footer {
 //  text-align: center;
