@@ -26,6 +26,7 @@ export default {
 @import '../styles/custom-container';
 @import '../styles/badge';
 @import '../styles/code-group';
+@import '../styles/back-to-top';
 
 //.my-footer {
 //  text-align: center;
