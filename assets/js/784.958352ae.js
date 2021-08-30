@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvuepress_theme_oxygen_not_included_demo=self.webpackChunkvuepress_theme_oxygen_not_included_demo||[]).push([[784],{3784:(e,n,t)=>{t.r(n),t.d(n,{default:()=>o});var u=t(6252);const o={components:{Layout:t(7554).Z},render:function(e,n,t,o,s,_){const c=(0,u.up)("Layout",!0);return(0,u.wg)(),(0,u.j4)(c)}}}}]);
