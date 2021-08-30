@@ -5,7 +5,7 @@ import * as path from 'path'
 export default defineUserConfig<DefaultThemeOptions>({
   lang: 'zh-CN',
   title: 'VuePress Theme Oxygen Not Included',
-  description: '《缺氧》游戏风格主题，开发中……',
+  description: '《缺氧》游戏风格的 VuePress2 主题',
   theme: 'vuepress-theme-oxygen-not-included',
 
   themeConfig: {
